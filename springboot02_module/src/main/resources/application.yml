@@ -1,0 +1,10 @@
+#spring整合mybatis的配置文件
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/student_system
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+
+
