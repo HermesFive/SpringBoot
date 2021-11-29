@@ -12,4 +12,7 @@ import java.util.List;
 public interface UserDao extends BaseMapper<User> {
     @Select("select * from td_user where username = #{username}")
     public List<User> selectUserByUsername(@Param("username") String username);
+
+    @Select("select * from td_user where username = #{username} and password = #{password}")
+    public User login(@Param("username") String username, @Param("password") String password);
 }
